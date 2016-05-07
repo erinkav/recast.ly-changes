@@ -36,6 +36,7 @@ describe('App', function() {
     var videoEntryTitleElements = scryRenderedDOMComponentsWithClass(app, 'video-list-entry-title');
 
     videoEntryTitleElements.forEach((videoEntryTitle) => {
+      debugger; 
       Simulate.click(videoEntryTitle);
       var player = findRenderedDOMComponentWithClass(app, 'video-player');
       var playerTitle = player.querySelector('.video-player-details h3');
