@@ -5,7 +5,6 @@ class App extends React.Component {
   }
 
   onVideoTitleClick(video) {
-    debugger; 
     this.setState({
       currentVideo: video
     }); 
